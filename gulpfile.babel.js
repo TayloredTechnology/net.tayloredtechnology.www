@@ -9,11 +9,29 @@ import BrowserSync from "browser-sync";
 import webpack from "webpack";
 import webpackConfig from "./webpack.conf";
 
+// Additional Optimizations
+// TODO Compare compressions with default Netlify ones for performance
+import autoprefixer from "autoprefixer";
+import cssNano from "gulp-cssnano";
+import responsive from "gulp-responsive";
+
 const browserSync = BrowserSync.create();
 
 // Hugo arguments
 const hugoArgsDefault = ["-d", "../dist", "-s", "site", "-v"];
 const hugoArgsPreview = ["--buildDrafts", "--buildFuture"];
+
+(function() {
+    var childProcess = require("child_process");
+    var oldSpawn = childProcess.spawn;
+    function mySpawn() {
+        console.log('spawn called');
+        console.log(arguments);
+        var result = oldSpawn.apply(this, arguments);
+        return result;
+    }
+    childProcess.spawn = mySpawn;
+})();
 
 // Development tasks
 gulp.task("hugo", (cb) => buildSite(cb));
@@ -22,6 +40,30 @@ gulp.task("hugo-preview", (cb) => buildSite(cb, hugoArgsPreview));
 // Build/production tasks
 gulp.task("build", ["css", "js"], (cb) => buildSite(cb, [], "production"));
 gulp.task("build-preview", ["css", "js"], (cb) => buildSite(cb, hugoArgsPreview, "production"));
+
+// Create responsive images
+gulp.task("img", () =>
+  gulp.src("./src/img/**.*")
+    // Resize images (use with <img> shortcode in hugo)
+    .pipe(responsive({
+      "*": [{
+        width: 480,
+        rename: {suffix: "-sm"},
+      }, {
+        width: 480 * 2,
+        rename: {suffix: "-sm@2x"},
+      }, {
+        width: 675,
+      }, {
+        width: 675 * 2,
+        rename: {suffix: "@2x"},
+      }],
+    }, {
+      // silent: true,              // Don't spam the console
+      withoutEnlargement: false, // Allow image enlargement
+    }))
+    .pipe(gulp.dest("./dist/img")
+));
 
 // Compile CSS with PostCSS
 gulp.task("css", () => (
@@ -47,7 +89,7 @@ gulp.task("js", (cb) => {
 });
 
 // Development server with browsersync
-gulp.task("server", ["hugo", "css", "js"], () => {
+gulp.task("server", ["hugo", "css", "js", "img"], () => {
   browserSync.init({
     server: {
       baseDir: "./dist"
