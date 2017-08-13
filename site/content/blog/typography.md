@@ -8,6 +8,7 @@ bref = "Typography is perhaps one of the most important and most visible things 
 +++
 
 {{< img src="/img/finland" type="jpg" alt="" caption="Filand Example" >}}
+{{< img src="/img/netlify-env-variables" type="png" alt="" caption="Filand Example" >}}
 
 <h3 class="section-head" id="h-get-started"><a href="#h-get-started">Get Started</a></h3>
 <p>Typography of Kube based on the 4px horizontal grid, it means that for the headers, paragraphs, quotes and any other texts chosen are a combination of line-height, that fit into the 4px grid and help set the horizontal rhythm of design by default.</p>

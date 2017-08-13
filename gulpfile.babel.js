@@ -14,6 +14,9 @@ import webpackConfig from "./webpack.conf";
 import autoprefixer from "autoprefixer";
 import cssNano from "gulp-cssnano";
 import responsive from "gulp-responsive";
+import imagemin from "gulp-imagemin";
+import mozjpeg from "imagemin-mozjpeg";
+import svgSprite from "gulp-svg-sprite";
 
 const browserSync = BrowserSync.create();
 
@@ -87,6 +90,32 @@ gulp.task("js", (cb) => {
     cb();
   });
 });
+
+gulp.task("img:build", ["img"], () =>
+  gulp.src(["./dist/img/*.{jpg,png,gif,svg}"])
+    // Optimise images
+    .pipe(imagemin([
+      imagemin.gifsicle(),
+      imagemin.optipng(),
+      imagemin.svgo(),
+      mozjpeg(),
+    ]))
+    .pipe(gulp.dest("./dist/img"))
+);
+
+gulp.task("svg", () =>
+  gulp.src("src/svg/*.svg")
+    .pipe(svgSprite({
+      mode: {
+        inline: true,
+        symbol: true
+      },
+      svg: {
+        xmlDeclaration: false,
+      }
+    }))
+    .pipe(gulp.dest("./site/layouts/partials"))
+);
 
 // Development server with browsersync
 gulp.task("server", ["hugo", "css", "js", "img"], () => {

@@ -21,6 +21,9 @@ export default {
   plugins: [
     new webpack.ProvidePlugin({
       "fetch": "imports-loader?this=>global!exports?global.fetch!whatwg-fetch"
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {warnings: false}
     })
   ],
 
@@ -31,7 +34,7 @@ export default {
   output: {
     path: path.join(__dirname, "dist"),
     publicPath: "/",
-    filename: "[name].js"
+    filename: "js/[name].js"
   },
   externals:  [/^vendor\/.+\.js$/]
 };
