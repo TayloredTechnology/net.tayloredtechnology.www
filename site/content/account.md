@@ -1,7 +1,7 @@
 +++
 title = "Sign In"
 +++
-<form action="" data-component="validate" method="post" class="form form-centered"><input type="hidden" name="authorize-token" value="">
+<form action="https://www.briskforms.com/go/1b960c59f092ecb8734bce6b56245105" data-component="validate" method="post" class="form form-centered"><input type="hidden" name="authorize-token" value="">
 
     <div class="form-item">
         <label>Email <span id="user-email-validation-error"></span></label>

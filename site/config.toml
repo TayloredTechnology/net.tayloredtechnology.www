@@ -9,17 +9,16 @@ Paginate = 4
   author = "Taylored Technology" # add your company name
   github = "TayloredTechnology" # add your github profile name
   twitter = "" # add your twitter profile
-  email = "myemail@myaddress.xxx"
 
 [[menu.main]]
-    name = "Docs"
+    name = "Services"
     weight = -100
-    url = "/docs/"
+    url = "/services/"
 [[menu.main]]
     name = "Blog"
     weight = -100
     url = "/blog/"
 [[menu.main]]
-    name = "Faq"
+    name = "Engagements"
     weight = -100
-    url = "/faq/"
+    url = "/engagements/"
