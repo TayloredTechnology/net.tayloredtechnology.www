@@ -22,3 +22,7 @@ Paginate = 4
     name = "Engagements"
     weight = -100
     url = "/engagements/"
+[[menu.main]]
+    name = "Contact"
+    weight = -100
+    url = "/contact/"
