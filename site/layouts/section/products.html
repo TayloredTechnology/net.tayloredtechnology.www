@@ -1,0 +1,34 @@
+{{ partial "header.html" . }}
+{{ partial "subheader.html" . }}
+<main>
+  <div>
+   <h1>{{ .Title }}</h1>
+        <ul>
+        <!-- Renders the li.html content view for each content/post/*.md -->
+            {{ range .Data.Pages }}
+                {{ .Render "li"}}
+            {{ end }}
+        </ul>
+  </div>
+</main>
+{{ partial "footer.html" . }}
+
+{{ define "title"}} {{ .Title}} {{end}}
+{{ define "header"}} {{ partial "header" .}} {{end}}
+
+{{ define "main" }}
+
+<div id="hero" class="wrap">
+  <h1>Voice of {{.Site.Params.author }} Developers</h1>
+    <p>Our vision, news and ideas, and whatever feels important.<br> <a href="{{.Params.twitter}}">Follow us on Twitter</a></p>
+</div>
+<ul id="posts">
+
+ {{ range .Paginator.Pages.ByWeight }} {{ partial "page-summary" . }} {{ end }}
+  <section>{{ partial "pagination" .}}</section>
+</ul>
+
+{{ end }}
+{{ define "footer" }}
+  {{ partial "footer" . }}
+{{ end }}

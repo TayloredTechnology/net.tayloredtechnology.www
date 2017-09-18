@@ -1,12 +1,13 @@
 ---
 title: "Netgen Devops"
 date: 2017-08-15T10:34:53+10:00
+description: "Always precise spacing and perfect font size"
+bref: "Typography is perhaps one of the most important and most visible things on a web page. Even slightest imperfection can ruin otherwise perfect website. With Kube, you will have perfect typography with ideal spacing, font sizes and proportions, regardless of the exact style or font you choose for your site."
 draft: true
 ---
-
 We all rely on technology, from checking our e-mails to reading this site. Every aspect of our lives is rapidly becoming integrated in ways our forefathers would dream of. But this doesn't mean it has to be hard, overly complex or lock into specific vendors.
 
-At Taylored Technology we developed one of the fastest WordPress hosting platforms in the world, and we did it by systematically taking apart every moving piece of what made the WordPress ecosystem; analysing it under the microscope tuning and tweaking at a microscopic level; introducing new and old technology replacements into the newer ecosystem and then subjecting it to a massive amount of pressure. 2.5 Billion page views to be precise...
+At Taylored Technology we developed one of the fastest WordPress hosting platforms in the world, and we did it by systematically taking apart every moving piece of what made the WordPress ecosystem; analysing it under the microscope tuning and tweaking at a microscopic level; introducing new and old technology replacements into the newer ecosystem and then subjecting it to a massive amount of pressure. 2.5 Billion page views to be precise…
 
 But then our client base grew, we were seen on Australia's Channel 10, 11, One, & even 'The Project'. Our clients demands grew to the point that one site required 160 plugins [lovethemes-amp] over 160,000 lines of code. Our infrastructure held and we introduced zero downtime updates on a daily basis for all our clients.
 
