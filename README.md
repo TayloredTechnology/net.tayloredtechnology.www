@@ -1,97 +1,126 @@
-# Victor Hugo
+![Hugo](https://raw.githubusercontent.com/gohugoio/hugoDocs/master/static/img/hugo-logo.png)
 
-**A [Hugo](https://gohugo.io/) boilerplate for creating truly epic websites**
+A Fast and Flexible Static Site Generator built with love by [bep](https://github.com/bep), [spf13](http://spf13.com/) and [friends](https://github.com/gohugoio/hugo/graphs/contributors) in [Go][].
 
-This is a boilerplate for using Hugo as a static site generator and Gulp + Webpack as your
-asset pipeline.
+[Website](https://gohugo.io) |
+[Forum](https://discourse.gohugo.io) |
+[Developer Chat (no support)](https://gitter.im/gohugoio/hugo) |
+[Documentation](https://gohugo.io/overview/introduction/) |
+[Installation Guide](https://gohugo.io/overview/installing/) |
+[Contribution Guide](CONTRIBUTING.md) |
+[Twitter](http://twitter.com/gohugoio)
 
-It's setup to use post-css and babel for CSS and JavaScript.
+[![GoDoc](https://godoc.org/github.com/gohugoio/hugo?status.svg)](https://godoc.org/github.com/gohugoio/hugo)
+[![Linux and macOS Build Status](https://api.travis-ci.org/gohugoio/hugo.svg?branch=master&label=Linux+and+macOS+build "Linux and macOS Build Status")](https://travis-ci.org/gohugoio/hugo)
+[![Windows Build Status](https://ci.appveyor.com/api/projects/status/a5mr220vsd091kua?svg=true&label=Windows+build "Windows Build Status")](https://ci.appveyor.com/project/bep/hugo/branch/master)
+[![Dev chat at https://gitter.im/gohugoio/hugo](https://img.shields.io/badge/gitter-developer_chat-46bc99.svg)](https://gitter.im/spf13/hugo?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Go Report Card](https://goreportcard.com/badge/github.com/gohugoio/hugo)](https://goreportcard.com/report/github.com/gohugoio/hugo)
 
-This project is released under the [MIT license](LICENSE). Please make sure you understand its implications and guarantees.
+## Overview
 
-## Usage
+Hugo is a static HTML and CSS website generator written in [Go][].
+It is optimized for speed, ease of use, and configurability.
+Hugo takes a directory with content and templates and renders them into a full HTML website.
 
-Be sure that you have the latest node and npm installed.
+Hugo relies on Markdown files with front matter for metadata, and you can run Hugo from any directory.
+This works well for shared hosts and other systems where you don’t have a privileged account.
 
-Next, clone this repository and run:
+Hugo renders a typical website of moderate size in a fraction of a second.
+A good rule of thumb is that each piece of content renders in around 1 millisecond.
+
+Hugo is designed to work well for any kind of website including blogs, tumbles, and docs.
+
+#### Supported Architectures
+
+Currently, we provide pre-built Hugo binaries for Windows, Linux, FreeBSD, NetBSD, macOS (Darwin), and [Android](https://gist.github.com/bep/a0d8a26cf6b4f8bc992729b8e50b480b) for x64, i386 and ARM architectures.
+
+Hugo may also be compiled from source wherever the Go compiler tool chain can run, e.g. for other operating systems including DragonFly BSD, OpenBSD, Plan 9, and Solaris.
+
+**Complete documentation is available at [Hugo Documentation][].**
+
+## Choose How to Install
+
+If you want to use Hugo as your site generator, simply install the Hugo binaries.
+The Hugo binaries have no external dependencies.
+
+To contribute to the Hugo source code or documentation, you should [fork the Hugo GitHub project](https://github.com/gohugoio/hugo#fork-destination-box) and clone it to your local machine.
+
+Finally, you can install the Hugo source code with `go`, build the binaries yourself, and run Hugo that way.
+Building the binaries is an easy task for an experienced `go` getter.
+
+### Install Hugo as Your Site Generator (Binary Install)
+
+Use the [installation instructions in the Hugo documentation](https://gohugo.io/overview/installing/).
+
+### Build and Install the Binaries from Source (Advanced Install)
+
+#### Prerequisite Tools
+
+* [Git](http://git-scm.com/)
+* [Go (latest or previous version)](https://golang.org/dl/)
+
+#### Vendored Dependencies
+
+Hugo uses [dep](https://github.com/golang/dep) to vendor dependencies, but we don't commit the vendored packages themselves to the Hugo git repository. Therefore, a simple `go get` is _not_ supported because the command is not vendor aware.
+
+The simplest way is to use [mage](https://github.com/magefile/mage) (a Make alternative for Go projects.)
+
+#### Fetch from GitHub
 
 ```bash
-npm install
-npm start
+go get github.com/magefile/mage
+go get -d github.com/gohugoio/hugo
+cd ${GOPATH:-$HOME/go}/src/github.com/gohugoio/hugo
+mage vendor
+mage install
 ```
 
-Then visit http://localhost:3000/ - BrowserSync will automatically reload CSS or
-refresh the page when stylesheets or content changes.
+**If you are a Windows user, substitute the `$HOME` environment variable above with `%USERPROFILE%`.**
+	
+## The Hugo Documentation
 
-To build your static output to the `/dist` folder, use:
+The Hugo documentation now lives in its own repository, see https://github.com/gohugoio/hugoDocs. But we do keep a version of that documentation as a `git subtree` in this repository. To build the sub folder `/docs` as a Hugo site, you need to clone this repo:
 
 ```bash
-npm run build
+git clone git@github.com:gohugoio/hugo.git
 ```
+## Contributing to Hugo
 
-## Structure
+For a complete guide to contributing to Hugo, see the [Contribution Guide](CONTRIBUTING.md).
 
-```
-|--site                // Everything in here will be built with hugo
-|  |--content          // Pages and collections - ask if you need extra pages
-|  |--data             // YAML data files with any data for use in examples
-|  |--layouts          // This is where all templates go
-|  |  |--partials      // This is where includes live
-|  |  |--index.html    // The index page
-|  |--static           // Files in here ends up in the public folder
-|--src                 // Files that will pass through the asset pipeline
-|  |--css              // CSS files in the root of this folder will end up in /css/...
-|  |--js               // app.js will be compiled to /app.js with babel
-```
+We welcome contributions to Hugo of any kind including documentation, themes,
+organization, tutorials, blog posts, bug reports, issues, feature requests,
+feature implementations, pull requests, answering questions on the forum,
+helping to manage issues, etc.
 
-## Basic Concepts
+The Hugo community and maintainers are [very active](https://github.com/gohugoio/hugo/pulse/monthly) and helpful, and the project benefits greatly from this activity.
 
-You can read more about Hugo's template language in their documentation here:
+### Asking Support Questions
 
-https://gohugo.io/templates/overview/
+We have an active [discussion forum](https://discourse.gohugo.io) where users and developers can ask questions.
+Please don't use the GitHub issue tracker to ask questions.
 
-The most useful page there is the one about the available functions:
+### Reporting Issues
 
-https://gohugo.io/templates/functions/
+If you believe you have found a defect in Hugo or its documentation, use
+the GitHub issue tracker to report the problem to the Hugo maintainers.
+If you're not sure if it's a bug or not, start by asking in the [discussion forum](https://discourse.gohugo.io).
+When reporting the issue, please provide the version of Hugo in use (`hugo version`).
 
-For assets that are completely static and don't need to go through the asset pipeline,
-use the `site/static` folder. Images, font-files, etc, all go there.
+### Submitting Patches
 
-Files in the static folder ends up in the web root. So a file called `site/static/favicon.ico`
-will end up being available as `/favicon.ico` and so on...
+The Hugo project welcomes all contributors and contributions regardless of skill or experience level.
+If you are interested in helping with the project, we will help you with your contribution.
+Hugo is a very active project with many contributions happening daily.
 
-The `src/js/app.js` file is the entrypoint for webpack and will be built to `/dist/app.js`.
+Because we want to create the best possible product for our users and the best contribution experience for our developers,
+we have a set of guidelines which ensure that all contributions are acceptable.
+The guidelines are not intended as a filter or barrier to participation.
+If you are unfamiliar with the contribution process, the Hugo team will help you and teach you how to bring your contribution in accordance with the guidelines.
 
-You can use ES6 and use both relative imports or import libraries from npm.
+For a complete guide to contributing code to Hugo, see the [Contribution Guide](CONTRIBUTING.md).
 
-Any CSS file directly under the `src/css/` folder will get compiled with [PostCSS Next](http://cssnext.io/)
-to `/dist/css/{filename}.css`. Import statements will be resolved as part of the build
+[![Analytics](https://ga-beacon.appspot.com/UA-7131036-6/hugo/readme)](https://github.com/igrigorik/ga-beacon)
 
-## Environment variables
-
-Two seperate the development and production *- aka build -* stages, all gulp
-tasks run with a node environment variable named either `development` or 
-`production`.
-
-You can access the environment variable inside the theme files with 
-`getenv "NODE_ENV"`. See the following example for a conditional statement:
-
-    {{ if eq (getenv "NODE_ENV") "development" }}You're in development!{{ end }}
-
-All tasks starting with *build* set the environment variable to `production` - 
-the other will set it to `development`.
-
-## Deploying to netlify
-
-- Push your clone to your own GitHub repository.
-- [Create a new site on Netlify](https://app.netlify.com/start) and link the repository.
-
-Now netlify will build and deploy your site whenever you push to git.
-
-You can also click this button:
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/eliwilliamson/victor-hugo)
-
-
-
-## Enjoy!!
+[Go]: https://golang.org/
+[Hugo Documentation]: https://gohugo.io/overview/introduction/

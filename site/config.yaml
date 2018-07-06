@@ -10,20 +10,3 @@ Params:
   github:     "TayloredTechnology" # add your github profile name
   twitter:    "techtaylored" # add your twitter profile
 
-menu:
-  main:
-    #- name:   "About"
-    #  weight: -200
-    #  url:    "/about/"
-    # - name: "Blog"
-    #   weight: -180
-    #   url:  "/blog/"
-    #- name:   "Services"
-    #  weight: -160
-    #  url:    "/services/"
-    #- name:   "Products"
-    #  weight: -140
-    #  url:    "/products/"
-    #- name:   "Contact"
-    #  weight: -120
-    #  url:    "/contact/"
