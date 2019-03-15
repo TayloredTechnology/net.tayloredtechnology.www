@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Engagements Showcase on Taylored Technology</title>
+    <link>/engagements/</link>
+    <description>Recent content in Engagements Showcase on Taylored Technology</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <lastBuildDate>Tue, 19 Sep 2017 09:53:25 +1000</lastBuildDate>
+    
+	<atom:link href="/engagements/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Internet Operational Platform</title>
+      <link>/engagements/internet-operational-platform/</link>
+      <pubDate>Tue, 15 Aug 2017 10:21:08 +1000</pubDate>
+      
+      <guid>/engagements/internet-operational-platform/</guid>
+      <description>Project Information For a business to be successful online, they need to split their time and effort across many specialized tools to not only drive traffic to their website but coordinate marketing, optimize conversion and ensure suitable uptime of services. We created an integrated operational platform that centralized all the critical success services for SME’s into one dashboard through a WordPress centric approach.
+Business Transformation  Upwards of 50% time &amp;amp; effort reductions for SME’s to acquire and convert customers into sales Internet ‘overwhelm’ drastically reduced with integrated in-store POS, inventory &amp;amp; drop-shipping management.</description>
+    </item>
+    
+    <item>
+      <title>Wordpress Micro Paas</title>
+      <link>/engagements/wordpress-micro-paas/</link>
+      <pubDate>Tue, 15 Aug 2017 10:19:54 +1000</pubDate>
+      
+      <guid>/engagements/wordpress-micro-paas/</guid>
+      <description>Project Information WordPress hosting can be an incredibly painful ecosystem, core WordPress wouldn’t satisfy business needs, and some clients required over 160+ plugins to be installed to suit business needs with updates needing to be rolled out daily, and the potential of breaking changes being introduced with each update clients, vigorous backups, staging environments and roll-backs were essential.
+Business Transformation Every WordPress hosting provide was evaluated, ranked and tested against our most complex clients with varying results ultimately highlighting the flaws of traditional hosting where larger servers were allocated to handle increased traffic.</description>
+    </item>
+    
+    <item>
+      <title>Data Warehouse</title>
+      <link>/engagements/data-warehouse/</link>
+      <pubDate>Tue, 15 Aug 2017 10:18:29 +1000</pubDate>
+      
+      <guid>/engagements/data-warehouse/</guid>
+      <description>Project Background This $16 Million project was tasked with creating a Big Data system to centralize fragmented customer data from multiple legacy and specialized systems such as claims, quotes, external brokers, &amp;amp; billing to name a few.
+Business Transformation  Original state was a still running 1970 DB2 mainframe with pieces of data scattered across many customer systems. CGU had budgeted $16 Million to centralize all data into a new DB2 Infomatica database cluster.</description>
+    </item>
+    
+    <item>
+      <title>Top Level Dns</title>
+      <link>/engagements/top-level-dns/</link>
+      <pubDate>Tue, 15 Aug 2017 10:17:35 +1000</pubDate>
+      
+      <guid>/engagements/top-level-dns/</guid>
+      <description>Project Background AusRegistry Group was constructing infrastructure for expanding their management from the .au ccTLD to other DNS 2.0 ccTLD’s where the traditional .com .net’s were expanded into offerings such as .australia or .next
+Business Transformation  Significant savings in licence fees, code compilation time &amp;amp; code quality were achieved through awareness and integration of powerful, proven open source tools that outperformed the existing commercially licensed alternatives. Systematic approach was implemented to transition the development team from the belief that CI tools such as Jenkins were blockers highlighting challenges in code quality to enables for rapid builds and deployment work-flows.</description>
+    </item>
+    
+    <item>
+      <title>Continuous Mobile Delivery</title>
+      <link>/engagements/continuous-mobile-delivery/</link>
+      <pubDate>Tue, 15 Aug 2017 10:15:47 +1000</pubDate>
+      
+      <guid>/engagements/continuous-mobile-delivery/</guid>
+      <description>Clients enabled  Australia: INGDirect, NAB, Vodafone Hutchinson, Coles, Telstra Asia Pacific: CIMB (Malaysia), NTT Docomo (Japan), NTT Data (Sapporo Japan), IBM (Japan), Acrodea (Japan) USA: DeutscheBank  Project Information Each of the clients had similar challenges in that they were actively developing and deploying mobile applications to multi platform phones. They had various security requirements such as Two Factor Verification, new user registration, root detection, phone number identity, and push notifications that all required the introduction of a ‘Stabilizing’ phase into their software development life-cycles slowing product delivery and increasing the risk of customer facing escaped defects.</description>
+    </item>
+    
+    <item>
+      <title>Artificial Intelligence</title>
+      <link>/engagements/artificial-intelligence/</link>
+      <pubDate>Tue, 15 Aug 2017 10:07:43 +1000</pubDate>
+      
+      <guid>/engagements/artificial-intelligence/</guid>
+      <description>Clients Enabled Trading Houses in the Foreign Exchange &amp;amp; Futures Markets
+Project Information The art of trading a has resulted in a number of different systems, rules and approaches each with varying results. We were tasked to create a way of increasing profits of any existing trading system through a deep understanding of the underlying markets by optimizing entry and exit price for any trading decision made by a trading system or trader.</description>
+    </item>
+    
+    <item>
+      <title>Machine Learning</title>
+      <link>/engagements/machine-learning/</link>
+      <pubDate>Tue, 15 Aug 2017 10:07:43 +1000</pubDate>
+      
+      <guid>/engagements/machine-learning/</guid>
+      <description>Project Information Our client(s) wanted to expand the user personalization approach to websites to accelerate conversions and increase return on their marketing campaigns. There were already a world of tools available for interacting, understanding and optimizing conversion flows for known or logged in users, but its a green-field environment for anonymous users ‘if’ its possible to identify, track and categorize their interactions into a demographic &amp;amp; segment rapidly.
+Business Transformation Prior to our involvement the primary method of interacting with ‘anonymous’ users was to subscribe to a large multi-geographical service (such as Facebook or Google) that the ‘anonymous’ user would already be logged into that’s prepared to share non PII (Personally Identifiable Information) with the company.</description>
+    </item>
+    
+  </channel>
+</rss>

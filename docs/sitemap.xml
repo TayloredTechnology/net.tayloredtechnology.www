@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/engagements/</loc>
+    <lastmod>2017-09-19T09:53:25+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/legal/</loc>
+    <lastmod>2017-09-19T09:53:25+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/legal/privacy-policy/</loc>
+    <lastmod>2017-09-19T09:52:40+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/legal/terms-conditions/</loc>
+    <lastmod>2017-09-19T09:52:08+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/legal/returns-refunds/</loc>
+    <lastmod>2017-09-19T09:51:51+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/products/</loc>
+    <lastmod>2017-09-18T20:17:37+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/legal/content-license/</loc>
+    <lastmod>2017-09-18T13:27:22+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/engagements/internet-operational-platform/</loc>
+    <lastmod>2017-08-15T10:21:08+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/engagements/wordpress-micro-paas/</loc>
+    <lastmod>2017-08-15T10:19:54+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/engagements/data-warehouse/</loc>
+    <lastmod>2017-08-15T10:18:29+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/engagements/top-level-dns/</loc>
+    <lastmod>2017-08-15T10:17:35+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/engagements/continuous-mobile-delivery/</loc>
+    <lastmod>2017-08-15T10:15:47+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+    <lastmod>2017-08-15T10:07:43+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/engagements/artificial-intelligence/</loc>
+    <lastmod>2017-08-15T10:07:43+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/engagements/machine-learning/</loc>
+    <lastmod>2017-08-15T10:07:43+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/services/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2017-09-19T09:52:40+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/contact/</loc>
+  </url>
+  
+</urlset>
